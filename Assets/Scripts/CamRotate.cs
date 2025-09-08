@@ -24,7 +24,7 @@ public class CamRotate : MonoBehaviour
     float x = Input.GetAxis("Mouse Y");
     float y = Input.GetAxis("Mouse X");
     //방향확인
-    angle.x += x * sensitivity * Time.deltaTime; //조금만 움직여도 잘 회전하도록 100 단위의 민감도를 추가
+    angle.x += x * sensitivity * Time.deltaTime; //조금만 움직여도 잘 회전하도록 민감도를 추가
     angle.y += y * sensitivity * Time.deltaTime;
     angle.z = transform.eulerAngles.z;
 
